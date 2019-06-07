@@ -1,0 +1,29 @@
+.cards {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 2vw;
+  padding: 0 2vw 2vw 2vw;
+  background-color: #004777;
+}
+
+
+.card {
+  background-color: $gray;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3{
+    font-family: Helvetica;
+    a {
+    color: white;
+    text-decoration: nome;
+    }
+  }
+}
+#names a {
+  color: white;
+}
+.card:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,25 @@
+<div class="navbar-lewagon"></div>
+
+<div class="banner">
+  <div class="titlez">
+    <h1>Lorem<br>Ipsum<br></h1>
+  </div>
+  <div class="new-cocktail">
+    <div> <%= link_to 'Create your cocktail!', new_cocktail_path %> </div>
+  </div>
+</div>
+
+<div class="space">
+  <h5><i>"Work is the curse of the drinking classes."</i> ~ Oscar Wilde</h5>
+</div>
+
+<div class="cards">
+<% @cocktails.each do |cocktail|%>
+  <div>
+    <div class="card">
+      <h3 id="names"><%=link_to cocktail.name.capitalize, cocktail_path(cocktail)%></h3>
+    </div>
+  </div>
+<% end %>
+</div>
+

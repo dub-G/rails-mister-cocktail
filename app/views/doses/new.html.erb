@@ -1,0 +1,17 @@
+<%= simple_form_for [@cocktail, @dose],:url =>  cocktail_doses_path, :method => :post do |f| %>
+<% if @dose.errors.any? %>
+    <div class="errors-container">
+      <ul>
+        <% @dose.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
+
+  <div> <%= link_to 'Go back to the cocktail!', cocktail_path(@cocktail) %> </div>
+

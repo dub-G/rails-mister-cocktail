@@ -1,0 +1,39 @@
+.banner {
+  height: 92vh;
+  background-image: url(https://images.unsplash.com/photo-1511715112108-9acc6c3ff61f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+
+.titlez {
+  border: 5px solid white;
+  position: absolute;
+  top: 250px;
+  left: 125px;
+  padding: 2em;
+  h1 {
+    font-family: Helvetica;
+    letter-spacing: 20px;
+    font-size: 3em;
+    color: white;
+  }
+}
+
+
+.new-cocktail {
+  border-radius: 60px;
+  text-decoration: nome;
+  position: absolute;
+  top: 500px;
+  left: 180px;
+  font-family: Helvetica;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.85em;
+  color: white;
+  &:hover {
+  background-color: rgb(0,0,0);
+  color: white;
+  }
+}
