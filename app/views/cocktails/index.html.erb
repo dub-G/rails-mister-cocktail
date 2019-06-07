@@ -18,6 +18,7 @@
   <div>
     <div class="card">
       <h3 id="names"><%=link_to cocktail.name.capitalize, cocktail_path(cocktail)%></h3>
+      <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
     </div>
   </div>
 <% end %>
